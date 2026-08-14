@@ -1,0 +1,25 @@
+# Byte-compiled
+__pycache__/
+*.py[cod]
+
+# Jupyter / editor
+.ipynb_checkpoints/
+.DS_Store
+
+# Stray local renders. The figures themselves live in results/figures/, which
+# is tracked -- rebuilding them in place is how the repository is checked.
+*.tmp.jpg
+*.tmp.png
+
+# Large upstream artefacts that are deliberately NOT distributed.
+# See the "Data" section of README.md for what these are and how to obtain them.
+output/
+distributions/samples/
+flow_data/
+*.pkl
+
+# Flow-cytometry data, and the fits cached beside it: kept locally so the
+# application can be run, but not ours to publish. data/flow/README.md is
+# tracked and explains what belongs here.
+data/flow/*
+!data/flow/README.md
